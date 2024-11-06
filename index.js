@@ -102,3 +102,41 @@ const parent = document.querySelector('.parent');
 // prar.appendChild(addText);
 // document.body.appendChild(prar);
 
+
+function addLanguage (langName) {
+   const li = document.createElement('li');
+   li.innerHTML = `${langName}`
+   document.querySelector('.language').appendChild(li);
+
+}
+addLanguage("python");
+addLanguage("typescript");
+addLanguage("java");
+
+function addOptiLang (langName){
+    const li = document.createElement('li');
+    // const addText = document.createTextNode(langName);
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector(".language").appendChild(li)
+}
+addOptiLang("php")
+addOptiLang("c++")
+
+
+// const secondLang = document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML = "React";
+
+
+
+const secondLang = document.querySelector('li:nth-child(3)');
+const newLi = document.createElement('li');
+newLi.textContent = "MangoDB";
+secondLang.replaceWith(newLi);
+
+
+const firstLang = document.querySelector("li:first-child");
+firstLang.outerHTML = "<li>C#</li>"
+
+// remove 
+const lastLang = document.querySelector("li:last-child")
+lastLang.remove();
