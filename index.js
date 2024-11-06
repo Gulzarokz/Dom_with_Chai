@@ -59,10 +59,46 @@
 // const element = document.querySelector('#title');
 // console.log(element);
 
-const myUl = document.querySelector('ul');
-console.log(myUl);
+// const myUl = document.querySelector('ul');
+// console.log(myUl);
 
+// Relations ship in dom
 
+const parent = document.querySelector('.parent');
+// console.log(parent);
+// // console.log(parent.children[2].innerHTML);
+// console.log(parent.children[0].innerText);
 
+// for (let i = 0; i < parent.children.length; i++) {
+//    console.log( parent.children[i].innerHTML);
+   
+    
+// // }
+// parent.children[1].style.color = "yellow";
+// // console.log(parent.firstElementChild);
+// // console.log(parent.lastElementChild);
 
+// const dayOne = document.querySelector('.third');
+// // console.log(dayOne);
+// // console.log(dayOne.parentElement);
+// // console.log(dayOne.nextElementSibling);
+// // console.log(dayOne.previousElementSibling);
+
+// console.log("NODES", parent.childNodes);
+
+// CreateElement throught javaScript
+
+// const prar = document.createElement('prar');
+// console.log(prar);
+// prar.className = "main";
+// // prar.id = Math.round(Math.random() * 10 + 1);
+// prar.id = "myId";
+// prar.setAttribute("title", "generated title");
+// prar.style.backgroundColor = 'blue';
+// prar.padding = '5px';
+// prar.innerText = "how are you";
+
+// const addText = document.createTextNode("This is practice");
+// prar.appendChild(addText);
+// document.body.appendChild(prar);
 
